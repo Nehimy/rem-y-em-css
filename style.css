@@ -3,9 +3,41 @@
    del cálculo del ancho de la caja.
  */
 
-*{
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
+html {
+    /* font-size: 16px; */
+    color: #00cfff;
+    background: black;
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ff2571;
+}
+
+.div-padre {
+    font-size: 14px;
+    color: #ff7235;
+}
+
+.div-hijo-em {
+    font-size: 1em;
+    color: #ff8f5f;
+}
+
+.div-rem {
+    font-size: 1rem;
+    color: #00ff76;
+}
