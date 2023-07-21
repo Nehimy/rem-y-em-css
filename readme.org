@@ -1,5 +1,5 @@
 
-[https://i.imgur.com/tfxouum.png]
+[[https://i.imgur.com/tfxouum.png]]
 * rem y em en css
 rem y em son unidades de logitud relativa.
 ** ¿Pero relativo a que?
