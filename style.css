@@ -4,6 +4,9 @@
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+root {
+    font-size: 40px;
+}
 
 * {
   margin: 0px;
@@ -18,8 +21,12 @@ html {
     font-family: 'Lilita One', cursive;
     text-align: center;
     margin: 0 auto;
-    position: relative;
     top: 50%;
+
+    width: 100vw;
+    height: 100vw;
+    position: fixed;
+    /* animation: 5s animation-text ease-out infinite; */
 }
 
 h1 {
@@ -40,4 +47,17 @@ h1 {
 .div-rem {
     font-size: 1rem;
     color: #00ff76;
+}
+
+
+@keyframes animation-text {
+    0% {
+        top: 100%;
+        opacity: 0;
+    }
+
+    100%{
+        top:50%
+        opacity: 1;
+    }
 }

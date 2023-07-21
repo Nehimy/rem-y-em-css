@@ -1,0 +1,78 @@
+
+[https://i.imgur.com/tfxouum.png]
+* rem y em en css
+rem y em son unidades de logitud relativa.
+** ¿Pero relativo a que?
+En el caso de *em* quiere decir que es relativo o toma el tamaño de letra de su elemento padre. Mientras que  *rem* toma el tamaño de letra del elemento raíz root.
+=Nota:=
+Es importante saber que el *font-size* es una propiedad que se hereda del elemento padre.
+Ahora nótese que *el elemento raíz del documento html tiene la propiedad font-size en 16px* esto es un estándar en todos los navegadores.
+
+A partir de lo dicho anteriormente comprendamos que:
+
+– Cualquier elemento o párrafo que «no tenga un tamaño diferente al establecido por el navegador»  tendrá el mismo tamaño de letra del elemento raíz root.
+– Los elementos como <h1>,<h2>, etc tienen un tamaño predeterminado diferente.
+
+Para los siguientes ejemplos configuramos el tamaño de letra a 16px en el elemento <html> (esto es redundante; pero para mayor comprensión es mejor dejarlo así).
+
+ #+begin_src css
+  html {
+    font-size: 16px;
+    color: #00cfff;
+    background: black;
+  }
+ #+end_src
+
+** Ejemplos de em
+
+ Tenemos un elemento <h1> que tiene de forma predeterminada un font-size de 2em, bueno a este elemento lo redefinimos con 3em, de esta forma cuando comentamos el font-size veremos que regresa al tamaño predeterminado dado.
+
+Veamos la siguiente regla donde:
+
+ 1em = 16px  entonces
+ 2em = 16px + 16px = 32px
+ 3em = 16px + 16px + 16px = 48px
+
+** html
+#+begin_src html
+<html>
+  <body>
+    <h1>
+      Título h1
+    </h1>
+  </body>
+</html>
+#+end_src
+** css
+#+begin_src css
+h1 {
+  font-size: 3em;
+  color: #ff2571;
+}
+#+end_src
+
+Hagamos énfasis en que <h1> toma el tamaño de letra del <html> porque en este caso el <html> es su elmento padre directamente. Si esta etiqueta <h1> estuviera dentro de un <div> con un font-size diferente otro sería el resultado.
+
+** Ejemplos de rem
+
+Creamos un nuevo <div> y dentro de este creamos un <h2> con la  clase "div-rem" le damos un font-size de 1rem y vemos que toma el maño del elemento raíz <html>. Entonces podemos confirmar que si un elemento cualquiera tiene un font-size con valor 1rem toma el tamaño de letra heredada directamente desde el elemento raíz.
+** html
+#+begin_src html
+<html>
+  <body>
+    <div>
+      <h2 class="div-rem">
+        Elemento h2 que obtiene el tamaño de letra del &lt;html&gt.
+      </h2>
+    </div>
+  </body>
+</html>
+#+end_src
+
+** css
+#+begin_src css
+.div-rem {
+    font-size: 1rem;
+    color: #00ff76;
+}
+#+end_src
