@@ -77,4 +77,4 @@ Creamos un nuevo <div> y dentro de este creamos un <h2> con la  clase "div-rem" 
 }
 #+end_src
 ** Vídeo corto de los ejemplos rem y em
- [[https://youtu.be/_Z3V6_tAxdc][https://i.imgur.com/tfxouum.png]]
+ [[https://www.youtube.com/watch?v=_Z3V6_tAxdc][https://i.imgur.com/tfxouum.png]]
